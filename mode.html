@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #cart {
+            float: right;
+            margin-right: 20px;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        #search {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Shopping Cart</h1>
+
+<div id="cart">Cart: <span id="cart-count">0</span></div>
+
+<div id="search">
+    <label for="search-input">Search:</label>
+    <input type="text" id="search-input" oninput="searchProducts()">
+</div>
+
+<div id="products">
+    <div class="product" data-id="1" data-name="Product 1" data-price="20.00">
+        <h3>Product 1</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+    <div class="product" data-id="2" data-name="Product 2" data-price="30.00">
+        <h3>Product 2</h3>
+        <p>$30.00</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+    <!-- Add more products as needed -->
+</div>
+
+<script>
+    let cart = [];
+    let cartCount = 0;
+
+    function addToCart(productId) {
+        const product = document.querySelector(`.product[data-id="${productId}"]`);
+        const productName = product.dataset.name;
+        const productPrice = parseFloat(product.dataset.price);
+
+        cart.push({ id: productId, name: productName, price: productPrice });
+        cartCount++;
+
+        updateCartCount();
+    }
+
+    function updateCartCount() {
+        document.getElementById('cart-count').innerText = cartCount;
+    }
+
+    function searchProducts() {
+        const searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+        const products = document.querySelectorAll('.product');
+
+        products.forEach(product => {
+            const productName = product.dataset.name.toLowerCase();
+            const productElement = product;
+
+            if (productName.includes(searchTerm)) {
+                productElement.style.display = 'block';
+            } else {
+                productElement.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

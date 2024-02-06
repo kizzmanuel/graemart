@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup with Google</title>
+  <!-- Include the Google Sign-In API script -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Add the Google Sign-In client ID -->
+  <meta name="google-signin-client_id" content="YOUR_GOOGLE_SIGNIN_CLIENT_ID">
+</head>
+<body>
+  <h1>Signup with Google</h1>
+  <!-- Create a button for Google Sign-In -->
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+  <script>
+    // Callback function to handle successful sign-in
+    function onSignIn(googleUser) {
+      // Get user information from the GoogleUser object
+      var profile = googleUser.getBasicProfile();
+      var idToken = googleUser.getAuthResponse().id_token;
+
+      // You can now send the `idToken` and `profile` data to your server
+      // for user registration and authentication.
+      // Example code (requires a backend server):
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/signup'); // Replace '/signup' with your server endpoint
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          // Registration success, redirect to logged-in page or show a success message
+          alert('Registration successful!');
+        } else {
+          // Registration failed, handle the error (e.g., show an error message)
+          alert('Registration failed. Please try again later.');
+        }
+      };
+      xhr.send('idToken=' + encodeURIComponent(idToken) + '&email=' + encodeURIComponent(profile.getEmail()));
+    }
+  </script>
+</body>
+</html>

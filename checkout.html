@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+
+<meta name="description" content="this a list and delivery site">
+<meta name="keywords" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="graemart"/>
+  
+    <link rel="icon" type="image/x-icon" href="assets/images/Group 37.png" />
+    <title>graemart || we are here for your errands</title>
+<!-- links to access bootstrap, css,javascript,google fonts and icons -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="assets/js/bootstrap.bundle.js">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="faq1.css">
+<link rel="stylesheet" href="Fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=merienda:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+ <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">  -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,600&family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!-- end of links -->
+
+<style>
+  .Reschedule-button{
+    color: #fff;
+    background: #FC882E;
+    border-radius: 30px;
+  }
+  .Reschedule-button2{
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #FC882E;
+    color: #FC882E;
+  }
+  .Reschedule-button a{
+    text-decoration: none;
+  }
+  .Reschedule-button2{
+    text-decoration: none;
+  }
+  .btnf{
+    justify-content: center;
+      align-items: center;
+  }
+  .centered-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  .centered-input2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+
+  .centered-input input[type="number"] {
+      border-color: azure;
+      text-align: center;
+      width: 200px; /* Set the desired width */
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    img{
+        width: fit-content;
+      }
+      .centered-input {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .centered-input input[type="number"] {
+          width: 100%; /* Full width on smaller screens */
+          margin-bottom: 10px; /* Add some spacing between input and button */
+      }
+      img{
+        width: fit-content;
+      }
+  }
+</style>
+ 
+   <nav class="navbar text-dark navbar-expand-lg bg-light navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-secondary" href="index.html"><img src="assets/images/Group 37.png" alt="" class="img-fluid logo">  grae<span class="text-dark" style="font-weight: 600;">mart</span> </a>
+          <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars text-dark"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-5" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-dark active" href="index.html">CATEGORIES</a>
+              <a class="nav-link text-dark active" href="About.html">ABOUT US</a>
+            
+             <div class="search-container">
+              
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search Product">
+              </div>
+            <div class="contact d-flex">
+              <a class="nav-link text-dark" href="contact.html">CONTACT US</a>
+            </div>
+            <a class="nav-link text-dark" href="signup.html">SIGNUP/LOGIN</a>
+            
+            </div>
+          </div>
+       </div>
+      </nav>  
+<!-- end of navbar  -->
+
+<!-- Reschedule -->
+<section>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3 class="text-center">Reschedule Order</h3>
+          <p class="text-center">Do not run out of items, Set a new date for your next order.</p>
+          <div class="centered-input">
+            <input type="date" id="" />
+          </div>
+          <div class="centered-input2 mt-4">
+            <button type="button" class="btn Reschedule-button mx-2" data-bs-dismiss="modal"> <a href="checkout.html" style="text-decoration: none;">Reschedule</a></button>
+            <button type="button" id="setBudgetBtn" class="btn  Reschedule-button2"> <a href="checkout.html" style="text-decoration: none; color: #FC882E; padding-left: 12px; padding-right: 12px;">Cancel</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end of navbar  -->
+<section class="bg p-3 p-md-5 mt-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="p-3 border bg-light shadow-sm rounded">
+                  <div class="container">
+                      <h3 class="mb-4" style="font-weight: 700;">Checkout</h3>
+                      <h6 class="mb-4">Shipping Information</h6>
+                      <form>
+                          <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <input type="text" class="form-control mb-3" id="firstName" placeholder="First Name">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <input type="text" class="form-control mb-3" id="lastName" placeholder="Last Name">
+                                  </div>
+                              </div>
+                              <input type="text" class="form-control mb-3" id="address" placeholder="Address">
+                              <input type="text" class="form-control mb-3" id="apartment" placeholder="Apartment, Suite, Etc">
+                              <input type="text" class="form-control mb-3" id="phoneNumber" placeholder="Phone Number">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <select id="country" name="country" class="form-control mb-3">
+                                          <option value="">Select a country</option>
+                                          <!-- Add country options here -->
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <select id="city" name="city" disabled class="form-control mb-3">
+                                          <option value="">Select a city</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <select id="zipcode" name="zipcode" disabled class="form-control mb-3">
+                                          <option value="">Select a zip code</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="form-check mb-4">
+                                  <input type="checkbox" class="form-check-input" id="saveInfo">
+                                  <label class="form-check-label" for="saveInfo">Save contact information</label>
+                              </div>
+                              <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" > scduekk</a>
+                              <button type="submit" class="btb" > <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal" > Continue to Payment</a></button>
+</div>
+                      </form>
+        </div>
+      </div>
+</div>
+    <div class="col-md-4 mt-3">
+      <div class="p-3 border bg-light shadow-sm rounded">
+        <h3 class="mx-3" style="font-weight: 600;">Total</h3>
+        <p class="mx-3">Subtotal</p>
+        <p class="mx-3">Delivery</p>
+        <p class="mx-3" id="totalDisplay" style="font-weight: 600;">Total (VAT inclusive)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+<style>
+
+.btb{
+    width: 650px;
+    background: #FC882E;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #FC882E;
+    padding: 10px;
+    box-shadow: #FC882E;
+    margin-bottom: 50px;
+}
+.btb a{
+    text-decoration: none;
+    color: #fff;
+}
+.btb:hover{
+    border: 1px solid green;
+}
+
+@media(max-width: 1080px){
+  .btb{
+    width: 245px;
+    background: #FC882E;
+    color: #fff;
+    border-radius: 16px;
+    border: 1px solid #FC882E;
+    
+    box-shadow: #FC882E;
+    margin-bottom: 50px;
+}
+}
+</style> 
+   <script> 
+        const countrySelect = document.getElementById('country');
+        const citySelect = document.getElementById('city');
+        const zipcodeSelect = document.getElementById('zipcode');
+        
+        // Define city and zip code data (you can extend this data)
+        const cityData = {
+            usa: ['New York City', 'Los Angeles', 'Chicago'],
+            canada: ['Toronto', 'Vancouver', 'Montreal'],
+            uk: ['London', 'Manchester', 'Birmingham'],
+            nigeria: ['Abuja', 'Lagos', 'PortHarcout'],
+            // Add more cities here
+        };
+        
+        const zipCodeData = {
+            'New York City': ['10001', '10002', '10003'],
+            'Los Angeles': ['90001', '90002', '90003'],
+            'Chicago': ['60601', '60602', '60603'],
+            'Toronto': ['M5V 1H1', 'M5V 2H1', 'M5V 3H1'],
+            'Vancouver': ['V5K 1A1', 'V5K 2A1', 'V5K 3A1'],
+            'London': ['SW1A 1AA', 'SW1A 2AA', 'SW1A 3AA'],
+            'Abuja': ['90001', '90002', '90003'],
+            // Add more zip codes here
+        };
+        
+        // Function to populate city dropdown based on selected country
+        function populateCityDropdown() {
+            const selectedCountry = countrySelect.value;
+            citySelect.innerHTML = '<option value="">Select a city</option>';
+            
+            if (selectedCountry in cityData) {
+                cityData[selectedCountry].forEach(city => {
+                    const option = document.createElement('option');
+                    option.value = city;
+                    option.text = city;
+                    citySelect.appendChild(option);
+                });
+                
+                citySelect.disabled = false;
+            } else {
+                citySelect.disabled = true;
+                zipcodeSelect.disabled = true;
+            }
+            
+            // Clear zip code dropdown
+            zipcodeSelect.innerHTML = '<option value="">Select a zip code</option>';
+        }
+        
+        // Function to populate zip code dropdown based on selected city
+        function populateZipCodeDropdown() {
+            const selectedCity = citySelect.value;
+            zipcodeSelect.innerHTML = '<option value="">Select a zip code</option>';
+            
+            if (selectedCity in zipCodeData) {
+                zipCodeData[selectedCity].forEach(zipcode => {
+                    const option = document.createElement('option');
+                    option.value = zipcode;
+                    option.text = zipcode;
+                    zipcodeSelect.appendChild(option);
+                });
+                
+                zipcodeSelect.disabled = false;
+            } else {
+                zipcodeSelect.disabled = true;
+            }
+        }
+        
+        // Add event listeners to country and city dropdowns
+        countrySelect.addEventListener('change', populateCityDropdown);
+        citySelect.addEventListener('change', populateZipCodeDropdown);
+
+   </script> 
+  
+
+
+
+    
+       <!-- footer  -->
+       <section class="ending p-3 bg-dark">
+        <div class="row text-light p-3">
+           <div class="col-md-3 px-md-5">
+             <a href="#" class="text-secondary" style="text-decoration: none;"><img src="assets/images/Group 37.png" class="img-fluid" alt="" style="width: 30px;">grae<span  class="text-light">mart</span> </a>
+               <p>"Your Time, Our Errands - We Deliver Convenience"</p>
+               
+               <br>
+               <br>
+               <footer>
+                 <p class="md-font-3">&copy; 2023 graeseed cohort2.0.</p>
+               </footer>
+               <!-- <i class="fa-brands fa-square-whatsapp"></i> -->
+                 <div id="whatsapp-icon">
+                   <p style="font-size: 9px; color: #FC882E;">Customer support</p>
+                   <a href="https://wa.me/c/234809719654"><i class="fa-solid fa-comment-dots" style="color: #FC882E"></i></a>
+                 </div>
+             </div>
+             <div class="col-md-3">
+                 <p>Subscribe Now</p>
+               <form>
+              <input type="text" placeholder="@Enter your email">
+                 <div>
+                   <button class="btn btt btn-light mb-3 mt-3">subscribe</button>
+                 </div>
+               </form>
+                
+             </div>
+             <div class="col-md-3">
+   
+               <p><a href="About.html">About Us</a> </p>
+               <p><a href="cate.html">Categories</a></p>
+               <p> <a href="terms&condition.html">Terms and condition</a></p>
+               <p><a href="">Privacy policy</a></p>
+               <p><a href="Ruturnpolicy.html">Return policy</a></p>
+             </div>
+             <div class="col-md-3">
+               <p><a href="contact.html">Contact Us</a></p>
+               <p><a href="mailto:contactgraemart@gmail.com">send mail</a></p>
+    <p class="text-light" style="text-decoration: none;"><a href="faq.html" style="text-decoration: none;" class="text-light">FAQs</a> </p>
+               <div class="icons">
+                 <i class="fa-brands fa-whatsapp"></i>
+                 <a href="https://www.facebook.com/graemart" style="text-decoration: none;"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="https://www.instagram.com/shopwithgraemart/" style="text-decoration: none;"><i class="fa-brands fa-instagram" style="color: #e6e7ea;"></i></a>
+             <a href="https://www.twitter.com/shopgraemart"  style="text-decoration: none;"><i class="fa-brands fa-twitter" style="color: #eff0f0; text-decoration: none;"></i></a>
+               </div>
+             </div>
+           </div>
+           </div>
+       </div>
+       </section>  
+       <script src="faq.js"></script>
+       <script src="assets/js/bootstrap.bundle.js"></script>
+   </body>
+   </html>

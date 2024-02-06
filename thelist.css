@@ -1,0 +1,90 @@
+.input-container {
+    display: flex;
+    padding: 70px;
+    margin-bottom: 50px;
+    /* border: 1px solid #ccc; */
+  }
+
+  .input-field {
+    flex: 1;
+    margin-right: 10px; /* Adjust margin as needed */
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+    border-radius: 12px;
+   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    /* padding-left: 100px; */
+  }
+  .input-field:first-child {
+   flex: 2; /* Make the first input field twice as wide */
+ }
+ .input-field:last-child {
+   margin-right: 0;
+ }
+  .input-field:first-child {
+    flex: 2; /* Make the first input field twice as wide */
+  }
+  .input-field3{
+   flex: 1;
+   margin-right: 10px; /* Adjust margin as needed */
+   width: 10px;
+ }
+ input {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+ }
+
+ #itemList {
+    margin-top: 20px;
+  }
+  
+  #itemTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #itemTable th, #itemTable td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+  }
+  
+  #itemTable th {
+    text-align: left;
+  }
+/* dropdown */
+.dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .dropdown-content img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  #dropdown {
+    top: 100%;
+    margin-left: -200px;
+    padding-left: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+    z-index: 1;
+    /* position: absolute; */
+  }
+  .dropdown-content a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+
+ 

@@ -1,0 +1,23 @@
+.btb{
+    width: 471px;
+    background: #FC882E;
+    color: #fff;
+    border-radius: 16px;
+    border: 1px solid #FC882E;
+    padding: 10px;
+    box-shadow: #FC882E;
+    margin-bottom: 50px;
+}
+.btb a{
+    text-decoration: none;
+    color: #fff;
+}
+.btb:hover{
+    border: 1px solid green;
+}
+
+@media(max-width: 1080px){
+    .tpe{
+      display: none;
+    }
+}

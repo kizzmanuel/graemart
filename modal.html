@@ -1,0 +1,391 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<section>
+  <style>
+       .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: #fff;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    @media screen and (max-width: 600px) {
+      .button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+    </style>
+      <a href="#" class="button">Click me!</a>
+</section>
+
+
+<section>
+  
+
+
+<script>
+  const monthSelect = document.getElementById("monthSelect");
+const daySelect = document.getElementById("daySelect");
+
+// Number of days in each month (assuming non-leap year)
+const daysInMonth = {
+  1: 31, // January
+  2: 28, // February
+  3: 31, // March
+  4: 30, // April
+  5: 31, // May
+  6: 30, // June
+  7: 31, // July
+  8: 31, // August
+  9: 30, // September
+  10: 31, // October
+  11: 30, // November
+  12: 31 // December
+};
+
+monthSelect.addEventListener("change", function() {
+  const selectedMonth = parseInt(monthSelect.value);
+  
+  // Clear existing options
+  daySelect.innerHTML = '<option value="0">-- Select Day --</option>';
+  
+  if (selectedMonth !== 0) {
+    const daysInSelectedMonth = daysInMonth[selectedMonth];
+    
+    // Enable the day select box
+    daySelect.disabled = false;
+    
+    // Add options for days in the selected month
+    for (let i = 1; i <= daysInSelectedMonth; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      daySelect.appendChild(option);
+    }
+  } else {
+    // Disable the day select box if no month is selected
+    daySelect.disabled = true;
+  }
+});
+
+</script>
+</section>
+<section>
+  <label for="monthSelect">Select Month:</label>
+<select id="monthSelect">
+  <option value="0">-- Select Month --</option>
+  <option value="1">January</option>
+  <option value="2">February</option>
+  <!-- Add more month options as needed -->
+</select>
+
+<label for="daySelect">Select Day:</label>
+<select id="daySelect" disabled>
+  <option value="0">-- Select Day --</option>
+</select>
+
+
+<script>
+  const monthSelect = document.getElementById("monthSelect");
+const daySelect = document.getElementById("daySelect");
+
+// Number of days in each month (assuming non-leap year)
+const daysInMonth = {
+  1: 31, // January
+  2: 28, // February
+  3: 31, // March
+  4: 30, // April
+  5: 31, // May
+  6: 30, // June
+  7: 31, // July
+  8: 31, // August
+  9: 30, // September
+  10: 31, // October
+  11: 30, // November
+  12: 31 // December
+};
+
+monthSelect.addEventListener("change", function() {
+  const selectedMonth = parseInt(monthSelect.value);
+  
+  // Clear existing options
+  daySelect.innerHTML = '<option value="0">-- Select Day --</option>';
+  
+  if (selectedMonth !== 0) {
+    const daysInSelectedMonth = daysInMonth[selectedMonth];
+    
+    // Enable the day select box
+    daySelect.disabled = false;
+    
+    // Add options for days in the selected month
+    for (let i = 1; i <= daysInSelectedMonth; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      daySelect.appendChild(option);
+    }
+  } else {
+    // Disable the day select box if no month is selected
+    daySelect.disabled = true;
+  }
+});
+
+</script>
+</section>
+
+
+
+
+  
+</script>
+<section>
+  <label for="daySelect">Select Day:</label>
+<select id="daySelect">
+  <option value="0">-- Select Day --</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <!-- Add more day options as needed -->
+</select>
+
+<label for="monthDaysSelect">Days in Month:</label>
+<select id="monthDaysSelect"></select>
+
+<script>
+  const daySelect = document.getElementById("daySelect");
+const monthDaysSelect = document.getElementById("monthDaysSelect");
+
+// Days in each month (you can modify it for different months or leap years)
+const daysInMonth = {
+  1: 31, // January
+  2: 28, // February (assuming non-leap year)
+  3: 31, // March
+  4: 30, // April
+  5: 31, // May
+  6: 30, // June
+  7: 31, // July
+  8: 31, // August
+  9: 30, // September
+  10: 31, // October
+  11: 30, // November
+  12: 31 // December
+};
+
+daySelect.addEventListener("change", function() {
+  const selectedDay = parseInt(daySelect.value);
+  const selectedMonth = 1; // Assuming January (you can modify it for different months)
+  
+  // Clear existing options
+  monthDaysSelect.innerHTML = "";
+  
+  if (selectedDay !== 0) {
+    const daysInSelectedMonth = daysInMonth[selectedMonth];
+    
+    // Add options for days in the selected month
+    for (let i = 1; i <= daysInSelectedMonth; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      monthDaysSelect.appendChild(option);
+    }
+  }
+});
+
+</script>
+<style>
+
+</style>
+</section>
+<style>
+  /* Modal Container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Close Button */
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Close Button Hover */
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+}
+
+</style>
+<script>
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
+const saveBtn = document.getElementById("saveBtn");
+const exitBtn = document.getElementById("exitBtn");
+
+// Open the modal
+openModalBtn.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+
+// Close the modal
+closeModalBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+// Save button action
+saveBtn.addEventListener("click", function() {
+  const select1 = document.getElementById("select1");
+  const select2 = document.getElementById("select2");
+  
+  const selectedOption1 = select1.options[select1.selectedIndex].value;
+  const selectedOption2 = select2.options[select2.selectedIndex].value;
+  
+  // Perform save functionality with selected values here
+  console.log("Selected Option 1:", selectedOption1);
+  console.log("Selected Option 2:", selectedOption2);
+});
+
+// Exit button action
+exitBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+</script>
+
+
+
+<section>
+  <button id="openModalBtn">Open Modal</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="modal-close">&times;</span>
+      <h2>Modal Title</h2>
+      <label for="monthSelect">Select Month:</label>
+      <select id="monthSelect">
+        <option value="0">-- Select Month --</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      
+      <label for="daySelect">Select Day:</label>
+      <select id="daySelect" disabled>
+        <option value="0">-- Select Day --</option>
+      </select>
+      <div class="modal-buttons">
+        <button id="saveBtn">Save</button>
+        <button id="exitBtn">Exit</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  const monthSelect = document.getElementById("monthSelect");
+  const daySelect = document.getElementById("daySelect");
+  
+  // Number of days in each month (assuming non-leap year)
+  const daysInMonth = {
+    1: 31, // January
+    2: 28, // February
+    3: 31, // March
+    4: 30, // April
+    5: 31, // May
+    6: 30, // June
+    7: 31, // July
+    8: 31, // August
+    9: 30, // September
+    10: 31, // October
+    11: 30, // November
+    12: 31 // December
+  };
+  
+  monthSelect.addEventListener("change", function() {
+    const selectedMonth = parseInt(monthSelect.value);
+    
+    // Clear existing options
+    daySelect.innerHTML = '<option value="0">-- Select Day --</option>';
+    
+    if (selectedMonth !== 0) {
+      const daysInSelectedMonth = daysInMonth[selectedMonth];
+      
+      // Enable the day select box
+      daySelect.disabled = false;
+      
+      // Add options for days in the selected month
+      for (let i = 1; i <= daysInSelectedMonth; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        daySelect.appendChild(option);
+      }
+    } else {
+      // Disable the day select box if no month is selected
+      daySelect.disabled = true;
+    }
+  });
+  
+  
+</section>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+ 
+<body>
+  <i class="fa-solid fa-comment-dotsis icon"></i>
+  <div class="message">Welcome</div>
+<style>
+  .message {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+</style>
+  <script>
+    const icon = document.querySelector('.icon');
+const message = document.querySelector('.message');
+
+icon.addEventListener('mouseover', () => {
+  message.style.display = 'block';
+});
+
+icon.addEventListener('mouseout', () => {
+  message.style.display = 'none';
+});
+
+  </script>
+</body>
+</html>
+
+    <style>
+      #budgetDisplay {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    
+      #budgetExceededMessage {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+    <title>Budget Manager</title>
+    </head>
+    <body>
+      <div>
+        <h2>Set Your Budget</h2>
+        <input type="number" id="budgetInput" placeholder="Enter your budget">
+        <button id="setBudgetBtn">Set Budget</button>
+      </div>
+    
+      <div id="budgetDisplay">Your Budget: ₦0</div>
+    
+      <div>
+        <h2>Add Items to Your List</h2>
+        <input type="text" id="itemInput" placeholder="Item name">
+        <input type="number" id="costInput" placeholder="Cost">
+        <button id="addItemBtn">Add Item</button>
+      </div>
+    
+      <ul id="itemsList"></ul>
+    
+      <p id="budgetExceededMessage"></p>
+    
+      <script>
+        const budgetInput = document.getElementById('budgetInput');
+        const setBudgetBtn = document.getElementById('setBudgetBtn');
+        const budgetDisplay = document.getElementById('budgetDisplay');
+        const itemInput = document.getElementById('itemInput');
+        const costInput = document.getElementById('costInput');
+        const addItemBtn = document.getElementById('addItemBtn');
+        const itemsList = document.getElementById('itemsList');
+        const budgetExceededMessage = document.getElementById('budgetExceededMessage');
+    
+        let budget = 0;
+        let totalCost = 0;
+    
+        setBudgetBtn.addEventListener('click', () => {
+            budget = parseInt(budgetInput.value);
+            budgetDisplay.textContent = `Your Budget: ₦${budget}`;
+            budgetInput.value = '';
+            budgetExceededMessage.textContent = ''; // Clear budget exceeded message
+        });
+    
+        addItemBtn.addEventListener('click', () => {
+            const itemName = itemInput.value;
+            const itemCost = parseInt(costInput.value);
+    
+            if (!itemName || isNaN(itemCost)) {
+                alert('Please enter valid item and cost.');
+                return;
+            }
+    
+            if (totalCost + itemCost > budget) {
+                budgetExceededMessage.textContent = 'Budget Exceeded!';
+                return;
+            }
+    
+            totalCost += itemCost;
+            itemsList.innerHTML += `<li>${itemName}: ₦${itemCost}</li>`;
+    
+            itemInput.value = '';
+            costInput.value = '';
+            budgetExceededMessage.textContent = ''; // Clear budget exceeded message
+        });
+      </script>
+    </body>
+    </html>
+    
+</body>
+</html>

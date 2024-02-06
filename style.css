@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: poppins;  
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: red;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+nav .icon{
+    font-size: 35px;font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ul li{
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 5px 10x;
+}
+nav ul li:hover a{
+    background: #fff;
+    color: blue;
+}
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: white;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 350px;
+}
+nav .search_box span{
+    color: aqua;
+    font-size: 20px;
+    background: #fff;
+    height: 100px;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search_box span:hover{
+    color: #fff;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: red;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    transition: 0.3s;
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="this a list and delivery site">
+<meta name="keywords" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="graemart"/>
+  
+    <link rel="icon" type="image/x-icon" href="assets/images/Group 37.png" />
+    <title>graemart || we are here for your errands</title>
+<!-- links to access bootstrap, css,javascript,google fonts and icons -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="assets/js/bootstrap.bundle.js">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="faq1.css">
+<link rel="stylesheet" href="list.css">
+<link rel="stylesheet" href="Fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=merienda:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+ <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">  -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,600&family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!-- end of links -->
+
+
+ <div class="thebody">
+  <!-- navigation bar -->   
+<body   class="ho">
+   <nav class="navbar text-dark navbar-expand-lg bg-light navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-secondary" href="index.html"><img src="assets/images/Group 37.png" alt="" class="img-fluid logo">  grae<span class="text-dark" style="font-weight: 600;">mart</span> </a>
+          <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars text-dark"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-5" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-dark active" href="index.html">CATEGORIES</a>
+            
+              
+              <div class="search-container">
+                <i class="search-icon">&#128269;</i>
+                <input type="text" class="search-input" placeholder="         Search Product">
+              </div>
+
+            <div class="contact d-flex">
+              <a class="nav-link text-dark" href="contact.html">CONTACT US</a>
+            </div>
+              <a class="nav-link text-dark" href="signup.html">SIGNUP/LOGIN</a>
+            
+            </div>
+          </div>
+       </div>
+      </nav>  
+<!-- end of navbar  -->
+  
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  <!-- others -->
+  
+  <!-- Modal -->
+    <!--   -->
+
+    <section class="bg p-5 mt-5">
+        <div class="container-fluid px-5">
+            <div class="row gx-1">
+              <div class="col-7">
+               <div class="p-3 border bg-light shadow" style="border-radius: 10px;">
+               <div class="containerr">
+                <h3 style="font-weight: 600;" class="mb-5">Make a List</h3>
+                <a href="cate.html" class="category-link mb-5">select from category</a>
+              </div>
+            
+            <form>
+              <!-- <p style="font-weight: 400;">Items<span style="margin-left: 165px; font-weight: 400;">No of quantity</span></p> 
+              <p>₦Price</p> -->
+              <div class="header">
+                <p style="font-weight: 600;">Items<span style="margin-left: 270px; font-weight: 600;">No of quantity</span></p>
+                <p style="font-weight: 600; margin-left: 20px;">₦Price</p>
+              </div>
+              
+
+              <div class="d-flex gap-2">
+              
+                <input type="text" class="form-control" id="searchInput" placeholder="Rice 50kg" style="width: 300px;"> 
+                
+                <input type="number" class="form-control" id="quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">
+                   <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" id="addItemButton"></button>
+                 </div>
+                   <div id="dropdown" class="dropdown-content"></div>
+              <div class="d-flex gap-2">
+              
+             <input type="text" class="form-control" id="searchInput" placeholder="Rice 50kg" style="width: 300px;"> 
+             
+             <input type="number" class="form-control" id="quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">
+                <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" id="addItemButton"></button>
+              </div>
+                <div id="dropdown" class="dropdown-content"></div>
+                <div class="d-flex gap-2">
+              
+                  <input type="text" class="form-control" id="searchInput" placeholder="Rice 50kg" style="width: 300px;"> 
+                  <!-- <input type="number" class="form-control" id="quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">  -->
+                     <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" id="addItemButton"></button>
+                   </div>
+                     <div id="dropdown" class="dropdown-content"></div>
+                     <div class="d-flex gap-2">
+              
+                      <input type="text" class="form-control" id="searchInput" placeholder="Rice 50kg" style="width: 300px;"> 
+                          <!-- <input type="number" class="form-control" id="quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">  -->
+                         <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" id="addItemButton"></button>
+                       </div>
+                         <div id="dropdown" class="dropdown-content"></div>
+                         <div class="d-flex gap-2">
+              
+                          <input type="text" class="form-control" id="searchInput" placeholder="Rice 50kg" style="width: 300px;"> 
+                              <!-- <input type="number" class="form-control" id="quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">  -->
+                             <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" id="addItemButton"></button>
+                           </div>
+                             <div id="dropdown" class="dropdown-content"></div>
+                             <div class="d-flex gap-2">
+              
+                              <input type="text" class="form-control" id="searchInput" placeholder="Rice 50kg" style="width: 300px;"> 
+                                  <!-- <input type="number" class="form-control" id="quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">  -->
+                                 <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" id="addItemButton"></button>
+                               </div>
+                                 <div id="dropdown" class="dropdown-content"></div>
+                       
+                                <div id="contentContainer">
+                                 
+                                </div>
+                                <div class="d-flex">
+                                  <a href="#" id="addMoreLink">Add More</a>
+                                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                  <label for="vehicle3"> Save item</label>
+                                </div>
+                </form>
+                <section>
+                  
+                </section>
+               </div>
+              </div>
+              
+                  <div class="col-5">
+                    <div class="p-3 border bg-light shadow" style="border-radius: 10px;">
+                    <!-- <div class="containerr"> -->
+                      <p id="budgetExceededMessage"></p>
+                     <h3 style="font-weight: 600;">My List</h3>
+                    <div id="itemList">
+                      <div class="containero">
+                        <p style="font-weight: 600;">Budget</p>
+                        <div class="bud" id="budgetDisplay" style="margin-left: 170px; border: 1px solid #acaeb0; padding: 5px;"> ₦0</div>
+
+                        <!-- <div class="bud" style="margin-left: 170px; border: 1px solid #acaeb0; padding: 5px;">₦17500,500,675.00</div> -->
+                        <!-- <a href="#" class="category-link">select from category</a> -->
+                      </div>
+                      <table id="itemTable">
+                        <thead>
+                          <tr>
+                              
+                            <th>Product name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                   
+                    <p id="totalDisplay">Total: ₦0.00</p>
+
+                    <!-- <a href="datetester.html" class="listcheck" style="width: 500px;">Check out</a> -->
+                  <button style="width: 200px; background: #FC882E; padding: 10px; border-radius: 30px; border: none; margin-left: 25%;" data-bs-toggle="modal" data-bs-target="#exampleModal"><a style="color: #fff; list-style: none; align-items: center; text-decoration: none;" href="checkout.html">Check out</a></button> 
+                      
+                      <!-- <button id="addItemBtn">Add Item</button> -->
+
+
+                      <!-- -----for schedule ------- -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+
+                            <div class="modal-body">
+                              <!-- <div class=""><img src="assets/images/Frame 8606 (1).png" alt=""> -->
+                            <h3 class="text-center">Reschedule Order</h3>
+                            <p class="text-center">Do not run out of items,Set a new<br>date for your next order.</p>
+                            <div class="centered-input">
+                                <input  type="date" id=""/>
+                       
+                            </div>
+                            <div class="btnf mt-4">
+                              <button type="button" class="btb" data-bs-dismiss="modal"> <a href="checkout.html">Reschedule</a></button>
+                              <button type="button" id="setBudgetBtn" class="btb"> <a href="checkout.html">Skip</a></button>
+                            </div>
+                        </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                        </div>
+                        
+                       
+
+
+                
+                <script>
+               
+               const foodItems = [
+                      
+                      { name: 'Rice - Basmati', price: 50000.00, image: 'assets/images/basmati.jpg' }, 
+                      { name: 'Rice - Jasmine', price: 40000.99, image: 'rice.jpg' },
+                      { name: 'Rice - Brown', price: 30000.99, image: 'rice.jpg' },
+                      { name: 'Pasta', price: 200.00, image: 'pasta.jpg' },
+                      { name: 'Bread', price: 1000.00, image: 'bread.jpg' },
+                      { name: 'Chicken', price: 7000.99, image: 'chicken.jpg' },
+                      { name: 'Salmon', price: 1200.99, image: 'salmon.jpg' },
+                      // Add more food items here...
+                    ];
+                    
+                    const searchInput = document.getElementById('searchInput');
+                    const dropdown = document.getElementById('dropdown');
+                    const quantityInput = document.getElementById('quantityInput');
+                    const itemList = document.querySelector('#itemList tbody');
+                    const addItemButton = document.getElementById('addItemButton');
+                
+                    
+                    
+                    function displayDropdown(searchTerm) {
+                      dropdown.innerHTML = '';
+                    
+                      const filteredItems = foodItems.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+                    
+                      filteredItems.forEach(item => {
+                        const itemLink = document.createElement('a');
+                        itemLink.href = '#';
+                        itemLink.innerHTML = `<img src="${item.image}" alt="${item.name}"><br>${item.name}`;
+                        itemLink.addEventListener('click', () => {
+                          searchInput.value = item.name;
+                          dropdown.style.display = 'none';
+                        });
+                        dropdown.appendChild(itemLink);
+                      });
+                    
+                      dropdown.style.display = filteredItems.length ? 'block' : 'none';
+                    }
+                    
+                    function displayPrice() {
+                      const selectedItem = foodItems.find(item => item.name === searchInput.value);
+                      const quantity = parseFloat(quantityInput.value) || 1;
+                    
+                      if (selectedItem) {
+                        const price = (selectedItem.price * quantity).toFixed(2);
+                        quantityInput.nextElementSibling.textContent = `₦${price}`;
+                      } else {
+                        quantityInput.nextElementSibling.textContent = '';
+                      }
+                    }
+                    
+                    function addItemToList() {
+                      const selectedItem = foodItems.find(item => item.name === searchInput.value);
+                      const quantity = parseFloat(quantityInput.value) || 1;
+                    
+                      if (selectedItem) {
+                        const newRow = itemList.insertRow();
+                        newRow.insertCell().textContent = selectedItem.name;
+                        newRow.insertCell().textContent = quantity;
+                        newRow.insertCell().textContent = `₦${(selectedItem.price * quantity).toFixed(2)}`;
+              
+              
+                      }
+                    }
+                    // ... Your existing code ...
+              
+              function calculateTotal() {
+              let total = 0;
+              const rows = itemList.getElementsByTagName('tr');
+              
+              for (let i = 0; i < rows.length; i++) {
+              const priceCell = rows[i].cells[2];
+              if (priceCell) {
+              const price = parseFloat(priceCell.textContent.replace('₦', ''));
+              total += price;
+              }
+              }
+              
+              return total.toFixed(2);
+              }
+              
+              function updateTotalDisplay() {
+              const total = calculateTotal();
+              const totalDisplay = document.getElementById('totalDisplay');
+              totalDisplay.textContent = `Total: ₦${total}`;
+              }
+              
+              // ... Your existing code ...
+              
+              addItemButton.addEventListener('click', () => {
+              addItemToList();
+              updateTotalDisplay();
+              });
+              
+              // ... Your existing code ...
+              
+                    searchInput.addEventListener('input', () => {
+                      const searchTerm = searchInput.value;
+                      displayDropdown(searchTerm);
+                    });
+                    
+                    quantityInput.addEventListener('input', () => {
+                      displayPrice();
+                    });
+                    
+                    addItemButton.addEventListener('click', () => {
+                      addItemToList();
+                    });
+                    
+              
+                </script>
+                    </section>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+    </section> 
+
+    <section>
+      <!-- Add this after the budgetDisplay div -->
+    <div class="modal fade" id="budgetExceededModal" tabindex="-1" aria-labelledby="budgetExceededLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="budgetExceededLabel">Budget Exceeded</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            The total cost of items exceeds your budget.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+
+<!-- Your HTML code -->
+
+<div class="thebody">
+  <!-- navigation bar -->
+  <body class="ho">
+      <!-- Your existing content -->
+
+      <section class="p-3 mt-5 d-lg-none">
+          <!-- Existing content -->
+          <form class="list-form">
+              <!-- Items list form -->
+              <!-- ... -->
+              <div class="list-items">
+                  <!-- Your item input fields with the class 'list-item' -->
+                  <!-- For example: -->
+                  <div class="list-item d-flex gap-2">
+                      <input type="text" class="form-control searchInput" placeholder="Enter item (e.g. Basmati Rice 50kg)" style="width: 150px;">
+                      <input type="number" class="form-control quantityInput" placeholder="- 1 +" style="width: 50px; margin-left: 10px;">
+                      <button style="border:none; background-color: #fff; font-weight: 700; font-size: 16px;" class="addItemButton">click for price</button>
+                  </div>
+                  <!-- Repeat the above structure for other items -->
+              </div>
+          </form>
+      </section>
+
+      <section class="bg p-5 mt-5">
+          <!-- Another section content -->
+          <form class="list-form">
+              <!-- Another items list form -->
+              <!-- ... -->
+              <div class="list-items">
+                  <!-- Your item input fields with the class 'list-item' -->
+                  <!-- For example: -->
+                  <div class="list-item d-flex gap-2">
+                      <input type="text" class="form-control searchInput" placeholder="Rice 50kg" style="width: 300px;">
+                      <input type="number" class="form-control quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">
+                      <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" class="addItemButton"></button>
+                  </div>
+                  <div class="list-item d-flex gap-2">
+                    <input type="text" class="form-control searchInput" placeholder="Rice 50kg" style="width: 300px;">
+                    <input type="number" class="form-control quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">
+                    <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" class="addItemButton"></button>
+                </div>
+                <div class="list-item d-flex gap-2">
+                  <input type="text" class="form-control searchInput" placeholder="Rice 50kg" style="width: 300px;">
+                  <input type="number" class="form-control quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">
+                  <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" class="addItemButton"></button>
+              </div>
+                  <!-- Repeat the above structure for other items -->
+              </div>
+          </form>
+      </section>
+
+      <!-- Rest of your HTML content -->
+  </body>
+</div>
+
+<script>
+  // JavaScript code to handle elements using classes
+
+  // Selecting elements with the same class
+  const listForms = document.querySelectorAll('.list-form');
+
+  // Loop through each form
+  listForms.forEach(form => {
+      const listItems = form.querySelector('.list-items');
+
+      // Handling items within each form
+      const addItemButtons = listItems.querySelectorAll('.addItemButton');
+      const searchInputs = listItems.querySelectorAll('.searchInput');
+      const quantityInputs = listItems.querySelectorAll('.quantityInput');
+
+      // Example event listener for 'click' on addItemButton
+      addItemButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              // Your logic here for handling button click
+          });
+      });
+
+      // Example event listener for 'input' on searchInput
+      searchInputs.forEach(input => {
+          input.addEventListener('input', () => {
+              // Your logic here for handling input changes
+          });
+      });
+
+      // Example event listener for 'input' on quantityInput
+      quantityInputs.forEach(input => {
+          input.addEventListener('input', () => {
+              // Your logic here for handling quantity changes
+          });
+      });
+
+      // Add more event listeners or logic as needed for your functionality
+  });
+</script>
+
+
+    
+    <!-- footer  -->
+    
+      <section class="ending p-md-3 bg-dark">
+        <div class="row text-light p-md-3">
+          <div class="col-md-3 px-md-5">
+            <a href="index.html" class="text-secondary" style="text-decoration: none;"><img src="assets/images/Group 37.png" class="img-fluid" alt="" style="width: 30px;">grae<span  class="text-light">mart</span> </a>
+              <p>your tagline</p>
+              
+              <br>
+              <br>
+              <footer>
+                <p>&copy; 2023 graeseed cohort2.0.</p>
+              </footer>
+            </div>
+            <div class="col-md-3">
+                <h5>Subscribe Now</h5>
+                <p>@Enter your email </p>
+                <button class="btn btt btn-light">subscribe</button>
+            </div>
+            <div class="col-md-3">
+              <h5>Helpful Links</h5>
+              <p>Service</p>
+              <p>Terms and condition</p>
+              <p>Privacy policies</p>
+              <p>Return policy</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <p>Send Mail</p>
+              <p class="text-light" style="text-decoration: none;"><a href="faq.html" style="text-decoration: none;" class="text-light">FAQs</a> </p>
+              <div class="icons">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram" style="color: #e6e7ea;"></i>
+                <i class="fa-brands fa-twitter" style="color: #eff0f0;"></i>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      </section>
+
+    <script src="list.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

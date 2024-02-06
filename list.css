@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    font-family: 'Mulish', sans-serif;
+    /* font-family: 'merienda'; */
+    /* font-family: "poppins"; */
+}
+.number-container {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+    width: 100px;
+    height: 35px;
+    /* margin-bottom: -10px; */
+    margin-left: 10px;
+  }
+
+  .number {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #333;
+    border: none;
+  /* padding: 5px 5px; */
+  padding-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .mo{
+    display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          border: none;
+                                      }
+  .modal-footer a{
+    text-decoration: none;
+    color: #FC882E;
+  }
+  .modal-footer a:hover{
+    color: #fff;
+  }
+  .btb a{
+    text-decoration: none;
+    color: #FC882E;
+  }
+.btb{
+  justify-items: center;
+  border-radius: 16px;
+  border: 1px solid #FC882E;
+  padding: 5px;
+  width: 150px;
+  
+}
+.btb:hover{
+  background: #FC882E;
+  color: white;
+}
+.btb a:hover{
+  color: #fff;
+}
+.btnf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+.centered-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      /* width: 350px; */
+      /* margin-left: */ 
+  }
+
+  .containerr {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .category-link {
+    justify-content: end;
+    margin-left: 190px;
+    text-decoration: none; /* Remove underlines from the link */
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    /* padding:5px 10px 5px 5px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FC882E;
+    border: 1px solid #FC882E;
+    border-radius: 30px;
+  }
+  .category-link:hover{
+    color: #fff;
+    box-shadow: #000;
+  }
+  .listcheck {
+    width: 300px;
+    margin-left: 120px;
+    
+    text-decoration: none; /* Remove underlines from the link */
+    color: #fff;
+    padding: 5px;
+    background: #FC882E;
+    border: 1px solid #FC882E;
+    border-radius: 30px;
+  }
+  .header {
+    display: flex;
+    
+  }
+  
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input[type="text"], input[type="number"] {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  #dropdown {
+    top: 100%;
+    margin-left: -300px;
+    padding-left: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+    z-index: 1;
+    /* position: absolute; */
+  }
+  
+  /* #dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    border: 1px solid #ddd;
+    z-index: 1;
+  } */
+  
+  .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    border: none;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .dropdown-content img {
+    width: 50px;
+    height: 50px;
+    border: none;
+    object-fit: cover;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  #itemList {
+    margin-top: 20px;
+  }
+  
+  #itemTable {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  #itemTable th, #itemTable td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+  }
+  
+  #itemTable th {
+    text-align: left;
+  }
+  .checkout-button{
+    width: 300px; 
+    background: #FC882E; 
+    padding: 10px; 
+    border-radius: 30px;
+     border: none;
+     font-weight: 700;
+     color: #fff;
+     justify-content: center;
+     align-items: center;
+     margin-left: 15%;
+  }
+  .checkout-button a:hover{
+    color: #f9f9f9;
+    border: 1px solid #FC882E;
+  }
+  .delist{
+    width: ;
+    height: 250px;
+    border: 1px black solid;
+  }
+
+  @media(max-width: 1080px){
+    .dnd{
+      display: none;
+    }
+    .category-link {
+      justify-content: end;
+      margin-left: 50px;
+      text-decoration: none; /* Remove underlines from the link */
+      color: #FC882E;
+      font-size: 12px;
+      text-decoration: none;
+      /* padding:5px 10px 5px 5px; */
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: #fff;
+      border: 1px solid #FC882E;
+      border-radius: 10px;
+    }
+    #dropdown {
+      top: 10%;
+      margin-left: 2px;
+      padding-left: 0;
+      background-color: #fff;
+      width: 100%;
+      /* border: 1px solid #ddd; */
+      z-index: 1;
+      /* position: absolute; */
+    }
+
+    #itemList {
+      margin-top: 20px;
+    }
+    
+    #itemTable {
+      width: 100%;
+      border-collapse: collapse;
+      
+    }
+    
+    #itemTable th, #itemTable td {
+      /* border: 1px solid #ddd; */
+      padding: 3px;
+    }
+    
+    #itemTable th {
+      text-align: left;
+    }
+    .checkout-button{
+      margin-top: 20px;
+      width: 300px; 
+      background: #FC882E; 
+      padding: 10px; 
+      border-radius: 30px;
+       border: none;
+       font-weight: 700;
+       color: #fff;
+       justify-content: center;
+       align-items: center;
+       margin-left: 8%;
+    }
+    .checkout-button a:hover{
+      color: #f9f9f9;
+      border: 1px solid #FC882E;
+    }
+    
+  }

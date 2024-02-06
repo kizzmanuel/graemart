@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Manager</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.bundle.js">
+</head>
+<body>
+
+    
+        <style>
+  /* Custom CSS for mobile responsiveness */
+  @media (max-width: 767px) {
+    .modal-content {
+      /* Adjust modal content styles for smaller devices */
+    }
+    .centered-input {
+      text-align: center;
+    }
+    .centered-input input {
+      width: 100%;
+      max-width: 200px; /* Adjust as needed */
+      margin: 0 auto;
+      display: block;
+    }
+    .btnf {
+      text-align: center;
+    }
+    .btnf button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+
+    </style>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h3 class="text-center">Reschedule Order</h3>
+              <p class="text-center">Do not run out of items, Set a new date for your next order.</p>
+              <div class="centered-input">
+                <input type="date" id="" />
+              </div>
+              <div class="btnf mt-4">
+                <button type="button" class="btb" data-bs-dismiss="modal"> <a href="checkout.html">Reschedule</a></button>
+                <button type="button" id="setBudgetBtn" class="btb"> <a href="checkout.html">Skip</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <section>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal 
+        </button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <img src="assets/images/Frame 8606 (1).png" alt="" class="img-fluid" style="width: fit-content;">
+                            <!-- <h3>Do you have a budget?</h3> -->
+                            <p>Perhaps, you have an amount you've <br> separated to help guide your shopping. <br> Please input it below</p>
+                            <div class="centered-input">
+                                <input type="number" id="budgetInput" placeholder="₦ -----" />
+                                <button id="setBudgetBtn">Set Budget</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I don't have Budget</button>
+                        <button type="button" id="setBudgetBtn" class="btn btn-success">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        // Your JavaScript code here
+    </script>
+</body>
+</html>
+
+<style>
+    .centered-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centered-input input[type="number"] {
+        border-color: azure;
+        text-align: center;
+        width: 200px; /* Set the desired width */
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      img{
+          width: fit-content;
+        }
+        .centered-input {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .centered-input input[type="number"] {
+            width: 100%; /* Full width on smaller screens */
+            margin-bottom: 10px; /* Add some spacing between input and button */
+        }
+        img{
+          width: fit-content;
+        }
+    }
+</style>

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.buttonnn{
+    border-radius: 20px;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    margin-top: 30px;
+    background: #FC882E;
+    width: 300px;
+    margin-left: 50px;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+.atag{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* //////// */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .five{
+      display: grid;
+      /* padding: 10px; */
+      border: 1px solid;
+      width: 600px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+    }
+    input{
+      padding: 10px;
+    }
+    button{
+      border: #333;
+    }
+  h1 {
+    text-align: center;
+  }
+  
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input[type="text"], input[type="number"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .dropdown-content img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  #itemList {
+     border: 1px solid;
+     width: 500px;
+     padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #itemTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #itemTable th, #itemTable td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+  }
+  
+  #itemTable th {
+    text-align: left;
+  }
+
+    @media (max-width: 768px) {
+        input{
+          width: 100px;
+        }
+    }
+
+@media(max-width: 1080px){
+    .buttonnn{
+        border-radius: 20px;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        margin-top: 30px;
+        background: #FC882E;
+        width: 150px;
+        margin-left: 50px;
+        text-decoration: none;
+        border: none;
+        padding: 10px;
+        transition: 0.5s;
+        margin-bottom: 50px;
+    }
+    .atag{
+        color: #fff;
+        text-decoration: none;
+    }
+}

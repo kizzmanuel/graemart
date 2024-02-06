@@ -1,0 +1,1530 @@
+ @media (min-width:320px)  { 
+      .logo{
+        width: 30px;
+        height: auto;
+        margin-left: 10px;
+      }
+      .contact{
+        margin-left: 2px;
+      }
+      .search-container {
+        position: relative;
+        width: 200px;
+        margin-left: 0;
+      }
+      
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #ccc;
+      }
+      
+      .search-input {
+        width: 75%;
+        padding-left: 30px; /* Space for the icon */
+        padding-right: 10px; /* Space for the clear button (if needed) */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 36px;
+        font-size: 14px;
+      }
+      .masthead {
+        background-size: cover;
+        min-height: 90vh;
+        display: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+      .one {
+        background-size: cover;
+        min-height: 100vh;
+   
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+     
+      .two {
+padding-top: 100px;
+text-align: center;
+/* margin-left: 50px; */
+      }
+      .three{
+        text-align: center;
+      }
+    
+    .bttn {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-right: 100px;
+        gap: 20px;
+        /* height: 100vh; */
+      }
+      .four{
+        text-align: center;
+        /* font-size: 44px; */
+        font-family: 'merienda';
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .four h3{
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+        font-family: 'merienda';
+      }
+      .four h4{
+        font-size: 20px;
+        /* font-weight: 500; */
+        font-family: 'mulish';
+      }
+
+      .five {
+        grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   padding: 10px;
+
+      }
+      .five3 {
+        grid-template-columns: repeat(1, 1fr); 
+
+      }
+      .first{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .first p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .cs1{
+        margin-bottom: 60px;
+      }
+      .cs2{
+        margin-top: 60px;
+       
+      }
+
+      .first1{
+        margin-top: 20px;
+      }
+      .first1 p{
+        margin-top: 10px;
+      }
+
+      .product-image{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      .mst{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2px; */
+       align-items: center;
+       justify-content: space-between;
+      }
+     
+    /* .container{
+        width: 60%;
+        margin: 0 auto;
+    } */
+    .section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 20rem;
+    }
+    .product-box:hover{
+        padding: 1px;
+        border: 1px solid darkblue;
+        transition: .4s;
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 300px;
+      font-size: 24px;
+      width: 100px;
+      height: 60px;
+      /* background-color: green; */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      font-size: 50px;
+      font-weight: 800;
+      box-shadow: darkgreen;
+    }
+
+    .john img{
+      display: none;
+    }
+    .why-us{
+      display: none;
+    }
+    .started{
+      width: 150px;
+      text-decoration: none;
+      background: #FC882E;
+      color: #fff;
+      border: 1px solid #FC882E;
+      border-radius: 20px;
+      padding: 10px;
+font-size: 18px;
+      /* align-items: center; */
+ }
+ .whatsapp-btn{
+  width: 150px;
+  text-decoration: none;
+  background: #03390a;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px;
+font-size: 18px;
+  align-items: center;
+}
+
+.whatsapp-btn2{
+  width: 150px;
+  text-decoration: none;
+  background: #FC882E;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px; 
+font-size: 18px;
+  align-items: center;
+}
+
+
+
+    /* .whatsapp-btn{
+      width: 200px;
+      /* height: 50px; */
+      /* margin-top: 10px;
+      top: 624px;
+      left: 10px;
+      margin-left: 15px;
+      background: #FC882E;
+      color: #fff;
+      font-size: 18px;
+      border: #FC882E;
+      border-radius: 100px;
+      padding: 5px, 14px, 5px, 14px;
+      gap: 8px;
+      align-items: center; */
+    /* } */ 
+
+    .con-support{
+      width: 250px; 
+      font-size: 20px; 
+      height: 54px; 
+      color: #fff;
+      border: #FC882E;
+      font-weight: 600;
+       background: #FC882E;
+       margin-left: 10px;
+        /* gap: 10px; */
+         border-radius: 16px;
+         padding: 10px;
+         align-items: center;
+    }
+    .john{
+      display: none;
+    }
+     }
+
+     /* smartphones, Android phones, landscape iPhone */
+@media (min-width:480px)  {  .logo{
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
+}
+.contact{
+  margin-left: 2px;
+}
+.search-container {
+  position: relative;
+  width: 200px;
+  margin-left: 0;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ccc;
+}
+
+.search-input {
+  width: 75%;
+  padding-left: 30px; /* Space for the icon */
+  padding-right: 10px; /* Space for the clear button (if needed) */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 36px;
+  font-size: 14px;
+}
+.masthead {
+  background-size: cover;
+  min-height: 90vh;
+  display: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+  position: relative;
+}
+.one {
+  background-size: cover;
+  min-height: 100vh;
+
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.two {
+padding-top: 100px;
+text-align: center;
+/* margin-left: 50px; */
+}
+.three{
+  text-align: center;
+}
+
+.bttn {
+display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-right: 100px;
+  gap: 20px;
+  /* height: 100vh; */
+}
+.four{
+  text-align: center;
+  /* font-size: 44px; */
+  font-family: 'merienda';
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.four h3{
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 10px;
+  font-family: 'merienda';
+}
+.four h4{
+  font-size: 20px;
+  /* font-weight: 500; */
+  font-family: 'mulish';
+}
+
+.five {
+  grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+padding: 10px;
+
+}
+.five3 {
+  grid-template-columns: repeat(1, 1fr); 
+
+}
+.first{
+  width: 100%;
+  margin-top: 20px;
+}
+.first p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.cs1{
+  margin-bottom: 60px;
+}
+.cs2{
+  margin-top: 60px;
+ 
+}
+
+.first1{
+  margin-top: 20px;
+}
+.first1 p{
+  margin-top: 10px;
+}
+
+.product-image{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.mst{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* gap: 2px; */
+ align-items: center;
+ justify-content: space-between;
+}
+
+/* .container{
+  width: 60%;
+  margin: 0 auto;
+} */
+.section{
+  padding: 3rem 0 2rem;
+}
+.shop{
+  margin-top: 20rem;
+}
+.product-box:hover{
+  padding: 1px;
+  border: 1px solid darkblue;
+  transition: .4s;
+}
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#whatsapp-icon {
+position: fixed;
+bottom: 20px;
+left: 300px;
+font-size: 24px;
+width: 100px;
+height: 60px;
+/* background-color: green; */
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+z-index: 1000;
+font-size: 50px;
+font-weight: 800;
+box-shadow: darkgreen;
+}
+
+.john img{
+display: none;
+}
+.why-us{
+display: none;
+}
+.started{
+width: 150px;
+text-decoration: none;
+background: #FC882E;
+color: #fff;
+border: 1px solid #FC882E;
+border-radius: 20px;
+padding: 10px;
+font-size: 18px;
+/* align-items: center; */
+}
+.whatsapp-btn{
+width: 150px;
+text-decoration: none;
+background: #03390a;
+color: #fff;
+border: 1px solid #FC882E;
+border-radius: 20px;
+padding: 10px;
+font-size: 18px;
+align-items: center;
+}
+
+.whatsapp-btn2{
+width: 150px;
+text-decoration: none;
+background: #FC882E;
+color: #fff;
+border: 1px solid #FC882E;
+border-radius: 20px;
+padding: 10px; 
+font-size: 18px;
+align-items: center;
+}
+
+
+
+/* .whatsapp-btn{
+width: 200px;
+/* height: 50px; */
+/* margin-top: 10px;
+top: 624px;
+left: 10px;
+margin-left: 15px;
+background: #FC882E;
+color: #fff;
+font-size: 18px;
+border: #FC882E;
+border-radius: 100px;
+padding: 5px, 14px, 5px, 14px;
+gap: 8px;
+align-items: center; */
+/* } */ 
+
+.con-support{
+width: 250px; 
+font-size: 20px; 
+height: 54px; 
+color: #fff;
+border: #FC882E;
+font-weight: 600;
+ background: #FC882E;
+ margin-left: 10px;
+  /* gap: 10px; */
+   border-radius: 16px;
+   padding: 10px;
+   align-items: center;
+}
+.john{
+display: none;
+}}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px)  { 
+  .logo{
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+  }
+  .contact{
+    margin-left: 2px;
+  }
+  .search-container {
+    position: relative;
+    width: 200px;
+    margin-left: 0;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .search-input {
+    width: 75%;
+    padding-left: 30px; /* Space for the icon */
+    padding-right: 10px; /* Space for the clear button (if needed) */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .masthead {
+    background-size: cover;
+    min-height: 90vh;
+    display: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    position: relative;
+  }
+  .one {
+    background-size: cover;
+    min-height: 100vh;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    position: relative;
+  }
+ 
+  .two {
+padding-top: 100px;
+text-align: center;
+/* margin-left: 50px; */
+  }
+  .three{
+    text-align: center;
+  }
+
+.bttn {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-right: 100px;
+    gap: 20px;
+    /* height: 100vh; */
+  }
+  .four{
+    text-align: center;
+    /* font-size: 44px; */
+    font-family: 'merienda';
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .four h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: 'merienda';
+  }
+  .four h4{
+    font-size: 20px;
+    /* font-weight: 500; */
+    font-family: 'mulish';
+  }
+
+  .five {
+    grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+padding: 10px;
+
+  }
+  .five3 {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+  .first{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .first p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .cs1{
+    margin-bottom: 60px;
+  }
+  .cs2{
+    margin-top: 60px;
+   
+  }
+
+  .first1{
+    margin-top: 20px;
+  }
+  .first1 p{
+    margin-top: 10px;
+  }
+
+  .product-image{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .mst{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 2px; */
+   align-items: center;
+   justify-content: space-between;
+  }
+ 
+/* .container{
+    width: 60%;
+    margin: 0 auto;
+} */
+.section{
+    padding: 3rem 0 2rem;
+}
+.shop{
+    margin-top: 20rem;
+}
+.product-box:hover{
+    padding: 1px;
+    border: 1px solid darkblue;
+    transition: .4s;
+}
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 300px;
+  font-size: 24px;
+  width: 100px;
+  height: 60px;
+  /* background-color: green; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 50px;
+  font-weight: 800;
+  box-shadow: darkgreen;
+}
+
+.john img{
+  display: none;
+}
+.why-us{
+  display: none;
+}
+.started{
+  width: 150px;
+  text-decoration: none;
+  background: #FC882E;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px;
+font-size: 18px;
+  /* align-items: center; */
+}
+.whatsapp-btn{
+width: 150px;
+text-decoration: none;
+background: #03390a;
+color: #fff;
+border: 1px solid #FC882E;
+border-radius: 20px;
+padding: 10px;
+font-size: 18px;
+align-items: center;
+}
+
+.whatsapp-btn2{
+width: 150px;
+text-decoration: none;
+background: #FC882E;
+color: #fff;
+border: 1px solid #FC882E;
+border-radius: 20px;
+padding: 10px; 
+font-size: 18px;
+align-items: center;
+}
+
+
+
+/* .whatsapp-btn{
+  width: 200px;
+  /* height: 50px; */
+  /* margin-top: 10px;
+  top: 624px;
+  left: 10px;
+  margin-left: 15px;
+  background: #FC882E;
+  color: #fff;
+  font-size: 18px;
+  border: #FC882E;
+  border-radius: 100px;
+  padding: 5px, 14px, 5px, 14px;
+  gap: 8px;
+  align-items: center; */
+/* } */ 
+
+.con-support{
+  width: 250px; 
+  font-size: 20px; 
+  height: 54px; 
+  color: #fff;
+  border: #FC882E;
+  font-weight: 600;
+   background: #FC882E;
+   margin-left: 10px;
+    /* gap: 10px; */
+     border-radius: 16px;
+     padding: 10px;
+     align-items: center;
+}
+.john{
+  display: none;
+}
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px)  {  }
+
+ /* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { }
+
+
+
+ /* hi-res laptops and desktops */ 
+@media (min-width:1281px) { }
+
+
+@media(max-width: 400px){
+    .masthead{
+        background-image: none;
+      }
+}
+
+/* for ipone x */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .logo{
+        width: 30px;
+        height: auto;
+        margin-left: 10px;
+      }
+      .contact{
+        margin-left: 2px;
+      }
+      .search-container {
+        position: relative;
+        width: 200px;
+        margin-left: 0;
+      }
+      
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #ccc;
+      }
+      
+      .search-input {
+        width: 75%;
+        padding-left: 30px; /* Space for the icon */
+        padding-right: 10px; /* Space for the clear button (if needed) */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 36px;
+        font-size: 14px;
+      }
+      .masthead {
+        background-size: cover;
+        min-height: 90vh;
+        display: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+      .one {
+        background-size: cover;
+        min-height: 100vh;
+   
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+     
+      .two {
+padding-top: 100px;
+text-align: center;
+/* margin-left: 50px; */
+      }
+      .three{
+        text-align: center;
+      }
+    
+    .bttn {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-right: 100px;
+        gap: 20px;
+        /* height: 100vh; */
+      }
+      .four{
+        text-align: center;
+        /* font-size: 44px; */
+        font-family: 'merienda';
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .four h3{
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+        font-family: 'merienda';
+      }
+      .four h4{
+        font-size: 20px;
+        /* font-weight: 500; */
+        font-family: 'mulish';
+      }
+
+      .five {
+        grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   padding: 10px;
+
+      }
+      .five3 {
+        grid-template-columns: repeat(1, 1fr); 
+
+      }
+      .first{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .first p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .cs1{
+        margin-bottom: 60px;
+      }
+      .cs2{
+        margin-top: 60px;
+       
+      }
+
+      .first1{
+        margin-top: 20px;
+      }
+      .first1 p{
+        margin-top: 10px;
+      }
+
+      .product-image{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      .mst{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2px; */
+       align-items: center;
+       justify-content: space-between;
+      }
+     
+    /* .container{
+        width: 60%;
+        margin: 0 auto;
+    } */
+    .section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 20rem;
+    }
+    .product-box:hover{
+        padding: 1px;
+        border: 1px solid darkblue;
+        transition: .4s;
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 300px;
+      font-size: 24px;
+      width: 100px;
+      height: 60px;
+      /* background-color: green; */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      font-size: 50px;
+      font-weight: 800;
+      box-shadow: darkgreen;
+    }
+
+    .john img{
+      display: none;
+    }
+    .why-us{
+      display: none;
+    }
+    .started{
+      width: 150px;
+      text-decoration: none;
+      background: #FC882E;
+      color: #fff;
+      border: 1px solid #FC882E;
+      border-radius: 20px;
+      padding: 10px;
+font-size: 18px;
+      /* align-items: center; */
+ }
+ .whatsapp-btn{
+  width: 150px;
+  text-decoration: none;
+  background: #03390a;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px;
+font-size: 18px;
+  align-items: center;
+}
+
+.whatsapp-btn2{
+  width: 150px;
+  text-decoration: none;
+  background: #FC882E;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px; 
+font-size: 18px;
+  align-items: center;
+}
+
+
+
+    /* .whatsapp-btn{
+      width: 200px;
+      /* height: 50px; */
+      /* margin-top: 10px;
+      top: 624px;
+      left: 10px;
+      margin-left: 15px;
+      background: #FC882E;
+      color: #fff;
+      font-size: 18px;
+      border: #FC882E;
+      border-radius: 100px;
+      padding: 5px, 14px, 5px, 14px;
+      gap: 8px;
+      align-items: center; */
+    /* } */ 
+
+    .con-support{
+      width: 250px; 
+      font-size: 20px; 
+      height: 54px; 
+      color: #fff;
+      border: #FC882E;
+      font-weight: 600;
+       background: #FC882E;
+       margin-left: 10px;
+        /* gap: 10px; */
+         border-radius: 16px;
+         padding: 10px;
+         align-items: center;
+    }
+    .john{
+      display: none;
+    }
+    
+    }
+/* for iphone 6/7/8 */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+      .logo{
+        width: 30px;
+        height: auto;
+        margin-left: 10px;
+      }
+      .contact{
+        margin-left: 2px;
+      }
+      .search-container {
+        position: relative;
+        width: 200px;
+        margin-left: 0;
+      }
+      
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #ccc;
+      }
+      
+      .search-input {
+        width: 75%;
+        padding-left: 30px; /* Space for the icon */
+        padding-right: 10px; /* Space for the clear button (if needed) */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 36px;
+        font-size: 14px;
+      }
+      .masthead {
+        background-size: cover;
+        min-height: 90vh;
+        display: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+      .one {
+        background-size: cover;
+        min-height: 100vh;
+   
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+     
+      .two {
+padding-top: 100px;
+text-align: center;
+/* margin-left: 50px; */
+      }
+      .three{
+        text-align: center;
+      }
+    
+    .bttn {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-right: 100px;
+        gap: 20px;
+        /* height: 100vh; */
+      }
+      .four{
+        text-align: center;
+        /* font-size: 44px; */
+        font-family: 'merienda';
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .four h3{
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+        font-family: 'merienda';
+      }
+      .four h4{
+        font-size: 20px;
+        /* font-weight: 500; */
+        font-family: 'mulish';
+      }
+
+      .five {
+        grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   padding: 10px;
+
+      }
+      .five3 {
+        grid-template-columns: repeat(1, 1fr); 
+
+      }
+      .first{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .first p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .cs1{
+        margin-bottom: 60px;
+      }
+      .cs2{
+        margin-top: 60px;
+       
+      }
+
+      .first1{
+        margin-top: 20px;
+      }
+      .first1 p{
+        margin-top: 10px;
+      }
+
+      .product-image{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      .mst{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2px; */
+       align-items: center;
+       justify-content: space-between;
+      }
+     
+    /* .container{
+        width: 60%;
+        margin: 0 auto;
+    } */
+    .section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 20rem;
+    }
+    .product-box:hover{
+        padding: 1px;
+        border: 1px solid darkblue;
+        transition: .4s;
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 300px;
+      font-size: 24px;
+      width: 100px;
+      height: 60px;
+      /* background-color: green; */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      font-size: 50px;
+      font-weight: 800;
+      box-shadow: darkgreen;
+    }
+
+    .john img{
+      display: none;
+    }
+    .why-us{
+      display: none;
+    }
+    .started{
+      width: 150px;
+      text-decoration: none;
+      background: #FC882E;
+      color: #fff;
+      border: 1px solid #FC882E;
+      border-radius: 20px;
+      padding: 10px;
+font-size: 18px;
+      /* align-items: center; */
+ }
+ .whatsapp-btn{
+  width: 150px;
+  text-decoration: none;
+  background: #03390a;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px;
+font-size: 18px;
+  align-items: center;
+}
+
+.whatsapp-btn2{
+  width: 150px;
+  text-decoration: none;
+  background: #FC882E;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px; 
+font-size: 18px;
+  align-items: center;
+}
+
+
+
+    /* .whatsapp-btn{
+      width: 200px;
+      /* height: 50px; */
+      /* margin-top: 10px;
+      top: 624px;
+      left: 10px;
+      margin-left: 15px;
+      background: #FC882E;
+      color: #fff;
+      font-size: 18px;
+      border: #FC882E;
+      border-radius: 100px;
+      padding: 5px, 14px, 5px, 14px;
+      gap: 8px;
+      align-items: center; */
+    /* } */ 
+
+    .con-support{
+      width: 250px; 
+      font-size: 20px; 
+      height: 54px; 
+      color: #fff;
+      border: #FC882E;
+      font-weight: 600;
+       background: #FC882E;
+       margin-left: 10px;
+        /* gap: 10px; */
+         border-radius: 16px;
+         padding: 10px;
+         align-items: center;
+    }
+    .john{
+      display: none;
+    }
+    }
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+      .logo{
+        width: 30px;
+        height: auto;
+        margin-left: 10px;
+      }
+      .contact{
+        margin-left: 2px;
+      }
+      .search-container {
+        position: relative;
+        width: 200px;
+        margin-left: 0;
+      }
+      
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #ccc;
+      }
+      
+      .search-input {
+        width: 75%;
+        padding-left: 30px; /* Space for the icon */
+        padding-right: 10px; /* Space for the clear button (if needed) */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 36px;
+        font-size: 14px;
+      }
+      .masthead {
+        background-size: cover;
+        min-height: 90vh;
+        display: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+      .one {
+        background-size: cover;
+        min-height: 100vh;
+   
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+      }
+     
+      .two {
+padding-top: 100px;
+text-align: center;
+/* margin-left: 50px; */
+      }
+      .three{
+        text-align: center;
+      }
+    
+    .bttn {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-right: 100px;
+        gap: 20px;
+        /* height: 100vh; */
+      }
+      .four{
+        text-align: center;
+        /* font-size: 44px; */
+        font-family: 'merienda';
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .four h3{
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+        font-family: 'merienda';
+      }
+      .four h4{
+        font-size: 20px;
+        /* font-weight: 500; */
+        font-family: 'mulish';
+      }
+
+      .five {
+        grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   padding: 10px;
+
+      }
+      .five3 {
+        grid-template-columns: repeat(1, 1fr); 
+
+      }
+      .first{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .first p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .cs1{
+        margin-bottom: 60px;
+      }
+      .cs2{
+        margin-top: 60px;
+       
+      }
+
+      .first1{
+        margin-top: 20px;
+      }
+      .first1 p{
+        margin-top: 10px;
+      }
+
+      .product-image{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      .mst{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2px; */
+       align-items: center;
+       justify-content: space-between;
+      }
+     
+    /* .container{
+        width: 60%;
+        margin: 0 auto;
+    } */
+    .section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 20rem;
+    }
+    .product-box:hover{
+        padding: 1px;
+        border: 1px solid darkblue;
+        transition: .4s;
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 300px;
+      font-size: 24px;
+      width: 100px;
+      height: 60px;
+      /* background-color: green; */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      font-size: 50px;
+      font-weight: 800;
+      box-shadow: darkgreen;
+    }
+
+    .john img{
+      display: none;
+    }
+    .why-us{
+      display: none;
+    }
+    .started{
+      width: 150px;
+      text-decoration: none;
+      background: #FC882E;
+      color: #fff;
+      border: 1px solid #FC882E;
+      border-radius: 20px;
+      padding: 10px;
+font-size: 18px;
+      /* align-items: center; */
+ }
+ .whatsapp-btn{
+  width: 150px;
+  text-decoration: none;
+  background: #03390a;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px;
+font-size: 18px;
+  align-items: center;
+}
+
+.whatsapp-btn2{
+  width: 150px;
+  text-decoration: none;
+  background: #FC882E;
+  color: #fff;
+  border: 1px solid #FC882E;
+  border-radius: 20px;
+  padding: 10px; 
+font-size: 18px;
+  align-items: center;
+}
+
+
+
+    /* .whatsapp-btn{
+      width: 200px;
+      /* height: 50px; */
+      /* margin-top: 10px;
+      top: 624px;
+      left: 10px;
+      margin-left: 15px;
+      background: #FC882E;
+      color: #fff;
+      font-size: 18px;
+      border: #FC882E;
+      border-radius: 100px;
+      padding: 5px, 14px, 5px, 14px;
+      gap: 8px;
+      align-items: center; */
+    /* } */ 
+
+    .con-support{
+      width: 250px; 
+      font-size: 20px; 
+      height: 54px; 
+      color: #fff;
+      border: #FC882E;
+      font-weight: 600;
+       background: #FC882E;
+       margin-left: 10px;
+        /* gap: 10px; */
+         border-radius: 16px;
+         padding: 10px;
+         align-items: center;
+    }
+    .john{
+      display: none;
+    }
+    }
+
+    @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}

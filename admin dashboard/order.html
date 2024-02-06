@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsiive Admin Dashboard | graemart</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <!-- <i class="bx bxl-c-plus-plus"></i> -->
+        <img src="images/Group 37.png" style="width: 30px; margin-left: 10px; margin-right: 5px;" alt="">
+        <span class="logo_name">graemart</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="active">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="order.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Orders</span>
+          </a>
+        </li>
+        <li>
+          <a href="product.html">
+            <i class="bx bx-box"></i>
+            <span class="links_name">Products</span>
+          </a>
+        </li>
+        <li>
+          <a href="Delivery.html">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Delivery</span>
+          </a>
+        </li>
+        <li>
+          <a href="Customer.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Customers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links_name">graemart staff</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-book-alt"></i>
+            <span class="links_name">Promotions</span>
+          </a>
+        </li>
+        
+        <!-- <li>
+          <a href="#">
+            <i class="bx bx-message"></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li> -->
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <div class="profile-details">
+            <img src="images/pexels-swapnil-sharma-3274210.jpg" alt="" />
+            <span class="admin_name" >Hello Admin</span>
+             <i class="bx bx-chevron-down"></i>
+          <!-- <span class="dashboard">Dashboard</span> -->
+        </div>
+        <!-- <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div> -->
+        <!-- <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Prem Shahi</span>
+          <i class="bx bx-chevron-down"></i>
+        </div> -->
+      </nav>
+      <style>
+       
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+    
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    
+    .search-input {
+      border: none;
+      outline: none;
+    }
+    
+    .search-icon {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    
+    .calendar-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .day-select {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    
+    .calendar-input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+        </style>
+      <div class="home-content">
+      
+        <div class="sales-boxes">
+          <div class="recent-sales box">
+            <div class="title">Order</div>
+            <div class="header">
+                <div class="search-container">
+                  <input type="text" class="search-input" placeholder="Search...">
+                  <span class="search-icon">&#128269;</span>
+                </div>
+                <div class="calendar-container">
+                  <select class="day-select">
+                    <option value="mon">Status</option>
+                    <option value="tue">Action</option>
+                    <!-- Add other days here -->
+                  </select>
+                  <input type="date" class="calendar-input">
+                </div>
+              </div>
+            <div class="sales-details">
+              <ul class="details">
+                <li class="topic">Date</li>
+                <li><a href="#">01/01/2023</a></li>
+                <li><a href="#">01/01/2023</a></li>
+                <li><a href="#">01/01/2023</a></li>
+                <li><a href="#">02/01/2023</a></li>
+                <li><a href="#">02/01/2023</a></li>
+                <li><a href="#">02/01/2023 </a></li>
+                <li><a href="#">02/01/2023</a></li>
+                <li><a href="#">02/01/2023</a></li>
+              </ul>
+              <ul class="details">
+                <li class="topic">Order ID</li>
+                <li><a href="#">376784</a></li>
+                <li><a href="#">389211</a></li>
+                <li><a href="#">256733</a></li>
+                <li><a href="#">156734</a></li>
+                <li><a href="#">304004</a></li>
+                <li><a href="#">899203</a></li>
+                <li><a href="#">889003</a></li>
+                <li><a href="#">178913</a></li>
+              </ul>
+              <ul class="details">
+                <li class="topic">Product</li>
+                <li><a href="#">Gloceries</a></li>
+                <li><a href="#">Rice</a></li>
+                <li><a href="#">Fanta</a></li>
+                <li><a href="#">Spahetti</a></li>
+                <li><a href="#">Floating berries</a></li>
+                <li><a href="#">Fish</a></li>
+                <li><a href="#">Beans</a></li>
+                <li><a href="#">Corn</a></li>
+              </ul>
+              
+              <ul class="details">
+                <li class="topic">Qty</li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">50</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">67</a></li>
+                <li><a href="#">19</a></li>
+              </ul>
+              <ul class="details">
+                <li class="topic">Customer Name</li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+                <li><a href="#">Recheal Manuel</a></li>
+              </ul>
+              <ul class="details">
+                <li class="topic">Amount</li>
+                <li><a href="#">₦100.00</a></li>
+                <li><a href="#">₦100.00</a></li>
+                <li><a href="#">₦100.00</a></li>
+                <li><a href="#">₦100,00</a></li>
+                <li><a href="#">₦100.00</a></li>
+                <li><a href="#">₦100.00</a></li>
+                <li><a href="#">₦100.00</a></li>
+                <li><a href="#">₦100.00</a></li>
+              </ul>
+              <ul class="details">
+                <li class="topic">Status</li>
+                <li><a href="#" style="color: blue;">Confirmed</a></li>
+                <li><a href="#" style="color: red;">Canceled</a></li>
+                 <li><a href="#" style="color: green;">Delivered</a></li>
+                 <li><a href="#" style="color: blue;">Confirmed</a></li>
+                 <li><a href="#" style="color: red;">Canceled</a></li>
+                 <li><a href="#" style="color: blue;">Confirmed</a></li>
+                 <li><a href="#" style="color: blue;">Confirmed</a></li>
+                <li><a href="#" style="color: green;">Delivered</a></li>
+              </ul>
+              <ul class="details">
+                <li class="topic">Action</li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+                <li><a href="#" style="text-align: center;">...</a></li>
+              </ul>
+            </div>
+            <div class="button">
+              <a href="#">See All</a>
+            </div>
+          </div>
+        
+               
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- Your other HTML content -->
+    
+        <div class="header">
+            <p style="font-weight: 600;">Items<span style="margin-left: 270px; font-weight: 600;">No of quantity</span></p>
+            <p style="font-weight: 600; margin-left: 20px;">₦Price</p>
+        </div>
+    
+        <div class="input-section d-flex gap-2">
+            <input type="text" class="form-control searchInput" placeholder="Rice 50kg" style="width: 300px;">
+            <input type="number" class="form-control quantityInput" placeholder="Enter quantity" style="width: 100px; margin-left: 10px;">
+            <button style="border: none; background-color: #fff; font-weight: 700; font-size: 26px;" class="addItemButton"></button>
+        </div>
+        <div class="dropdown dropdown-content"></div>
+    
+        <!-- Repeat the above input-section structure as needed -->
+        
+        <div id="contentContainer"></div>
+        <div class="d-flex">
+            <a href="#" id="addMoreLink">Add More</a>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Save item</label>
+        </div>
+    </form>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const foodItems = [
+                     { name: 'Rice - Basmati', price: 50000.00, image: 'assets/images/basmati.jpg' }, 
+                      { name: 'Rice - Jasmine', price: 40000.99, image: 'rice.jpg' },
+                      { name: 'Rice - Brown', price: 30000.99, image: 'rice.jpg' },
+                      { name: 'Pasta', price: 200.00, image: 'pasta.jpg' },
+                      { name: 'Bread', price: 1000.00, image: 'bread.jpg' },
+                      { name: 'Chicken', price: 7000.99, image: 'chicken.jpg' },
+                      { name: 'Salmon', price: 1200.99, image: 'salmon.jpg' },
+                      // Add more food items here...
+                  
+    ];
+
+    const searchInputs = document.querySelectorAll('.searchInput');
+    const quantityInputs = document.querySelectorAll('.quantityInput');
+    const addItemButtons = document.querySelectorAll('.addItemButton');
+    const dropdowns = document.querySelectorAll('.dropdown-content');
+    const contentContainer = document.getElementById('contentContainer');
+
+    // Your existing logic that handles interactions with these elements using query selectors
+                  
+    function displayDropdown(searchTerm) {
+                      dropdown.innerHTML = '';
+                    
+                      const filteredItems = foodItems.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+                    
+                      filteredItems.forEach(item => {
+                        const itemLink = document.createElement('a');
+                        itemLink.href = '#';
+                        itemLink.innerHTML = `<img src="${item.image}" alt="${item.name}"><br>${item.name}`;
+                        itemLink.addEventListener('click', () => {
+                          searchInput.value = item.name;
+                          dropdown.style.display = 'none';
+                        });
+                        dropdown.appendChild(itemLink);
+                      });
+                    
+                      dropdown.style.display = filteredItems.length ? 'block' : 'none';
+                    }
+                    
+                    function displayPrice() {
+                      const selectedItem = foodItems.find(item => item.name === searchInput.value);
+                      const quantity = parseFloat(quantityInput.value) || 1;
+                    
+                      if (selectedItem) {
+                        const price = (selectedItem.price * quantity).toFixed(2);
+                        quantityInput.nextElementSibling.textContent = `₦${price}`;
+                      } else {
+                        quantityInput.nextElementSibling.textContent = '';
+                      }
+                    }
+                    
+                    function addItemToList() {
+                      const selectedItem = foodItems.find(item => item.name === searchInput.value);
+                      const quantity = parseFloat(quantityInput.value) || 1;
+                    
+                      if (selectedItem) {
+                        const newRow = itemList.insertRow();
+                        newRow.insertCell().textContent = selectedItem.name;
+                        newRow.insertCell().textContent = quantity;
+                        newRow.insertCell().textContent = `₦${(selectedItem.price * quantity).toFixed(2)}`;
+              
+              
+                      }
+                    }
+                    // ... Your existing code ...
+              
+              function calculateTotal() {
+              let total = 0;
+              const rows = itemList.getElementsByTagName('tr');
+              
+              for (let i = 0; i < rows.length; i++) {
+              const priceCell = rows[i].cells[2];
+              if (priceCell) {
+              const price = parseFloat(priceCell.textContent.replace('₦', ''));
+              total += price;
+              }
+              }
+              
+              return total.toFixed(2);
+              }
+              
+              function updateTotalDisplay() {
+              const total = calculateTotal();
+              const totalDisplay = document.getElementById('totalDisplay');
+              totalDisplay.textContent = `Total: ₦${total}`;
+              }
+              
+              // ... Your existing code ...
+              
+              addItemButton.addEventListener('click', () => {
+              addItemToList();
+              updateTotalDisplay();
+              });
+              
+              // ... Your existing code ...
+              
+                    searchInput.addEventListener('input', () => {
+                      const searchTerm = searchInput.value;
+                      displayDropdown(searchTerm);
+                    });
+                    
+                    quantityInput.addEventListener('input', () => {
+                      displayPrice();
+                    });
+                    
+                    addItemButton.addEventListener('click', () => {
+                      addItemToList();
+                    });
+                    
+              
+    // Example event listener for handling the click on addItemButton
+    addItemButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            // Access input values based on the index or other relevant logic
+            const itemName = searchInputs[index].value;
+            const quantity = parseFloat(quantityInputs[index].value) || 1;
+
+            // Your logic to handle adding items to the list or any other action
+        });
+    });
+
+    // Other event listeners and logic using query selectors
+});
+
+</script>    
+</body>
+</html>

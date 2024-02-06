@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500');
+  @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    font-family: 'Mulish', sans-serif;
+    /* font-family: 'merienda'; */
+    /* font-family: "poppins"; */
+}
+
+body a{
+color: #fff;
+text-decoration: none;
+}
+/* Navbar styling  */
+.logo{
+    width: 30px;
+    height: auto;
+    margin-left: 50px;
+  }
+   nav a:hover{
+    color: #FC882E;
+    cursor: pointer;
+}
+.navbar{
+  font-family: 'poppins';
+    box-shadow: 0 1px 4px 0 #ffffff;
+    }
+    .search-container {
+      position: relative;
+      width: 300px;
+      margin-left: 50px;
+    }
+    
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #ccc;
+    }
+    
+    .search-input {
+      width: 100%;
+      padding-left: 30px; /* Space for the icon */
+      padding-right: 10px; /* Space for the clear button (if needed) */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 36px;
+      font-size: 14px;
+    }
+  
+    .contact{
+      margin-left: 100px;
+    }
+.ending a:hover{
+color: #FC882E;
+}
+/* end of navbar styling  */
+
+/* section one  */
+.masthead {
+    background-size: cover;
+    /* min-height: 60vh; */
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, .2); */
+    position: relative;
+    background-position: center top 80%; /* Adjust the percentage value to control how much it's reduced from the top */
+    height: 550px; /* Set the desired height for the container */
+    padding-bottom: -100px;
+    margin-bottom: 100px;
+  }
+  
+  .masthead2 {
+    background-size: cover;
+    min-height: 110vh;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    position: relative;
+  }
+  .whatsapp-btn{
+    width: 223px;
+    height: 50px;
+    margin-top: 10px;
+    top: 624px;
+    left: 75px;
+    margin-left: 55px;
+    /* background: #FC882E; */
+    background: #03390a;
+    color: #fff;
+    font-size: 24px;
+    border: #FC882E;
+    border-radius: 100px;
+    padding: 10px, 24px, 10px, 24px;
+  
+  }
+  .mkl-btn{
+    width: 223px;
+    height: 50px;
+    margin-top: 10px;
+    top: 624px;
+    left: 75px;
+    margin-left: 20px;
+    background: #FC882E;
+    color: #fff;
+    font-size: 24px;
+    border: #FC882E;
+    border-radius: 100px;
+    padding: 10px, 24px, 10px, 24px;
+    gap: 8px;
+  }
+  /* section two   */
+  .four{
+    text-align: center;
+    /* font-size: 44px; */
+    font-family: 'merienda';
+    margin-bottom: 10px;
+  }
+  .four h3{
+    font-size: 34px;
+    font-weight: 300;
+    font-family: 'merienda';
+  }
+  .four h4{
+    font-size: 20px;
+    /* font-weight: 500; */
+    font-family: 'mulish';
+  }
+  .five{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    justify-content: center; 
+    align-items: center; 
+   
+  }
+  .five3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-left: 100px; 
+   /* 
+  }
+  .five p{
+    font-weight: 700;
+  }
+  .first{
+    width: 200px;
+    height: 200px;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+  }
+  .first p{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .first{
+    position: relative;
+}
+.first:hover{
+    padding: 10px;
+    border: 5px solid #FC882E;
+    transition: .4s;
+}
+.why-us {
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-position: center top 80%; /* Adjust the percentage value to control how much it's reduced from the top */
+  height: 700px;/* Set the desired height for the container */
+  padding-bottom: -100px;
+  margin-bottom: 100px;
+  font-family: 'merienda'; 
+  text-align: center;
+
+}
+.why-us h3{
+  font-family: 'merienda';
+  font-weight: 700;
+  font-size: 44px;
+  
+}
+.image-container {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column img {
+    max-width: 60%;
+    height: auto;
+}
+.image1{
+  margin-top: 60px;
+  margin-left: 55px;
+  margin-bottom: 100px;
+}
+.image2{
+  margin-left: 55px;
+  margin-top: 00px;
+}
+.image3{
+  margin-top: 200px;
+}
+.column img:nth-child(2) {
+    margin-top: -30px; /* Adjust this value to control the spacing */
+}
+.six{
+ margin-top: 100px;
+    text-align: center;
+}
+.six{
+  justify-content: center;
+  align-content: center;
+}
+.six img{
+  justify-content: center;
+  align-content: center;
+}
+.seven{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+   align-items: center;
+   justify-content: space-between;
+  }
+  .mst{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+ 
+   /* align-items: center;
+   justify-content: space-between; */
+  }
+  
+  .cs2{
+    /* border: 1px solid #FC882E; */
+    font-size: 12px;
+ width: 170px;
+    height: 280px;
+     box-shadow: 0 4px 8px rgba(19, 18, 18, 0.1);
+    /* background: linear-gradient(to top,  rgb(234, 189, 155),  rgba(255, 255, 255, 1)); */
+    /* background: linear-gradient(to bottom, rgba(252, 136, 46, 0.5) 0%, rgba(232, 228, 228, 0.5) 100%); */
+   }
+   .fov{
+    padding: 200px;
+         transition: 0.6s;
+       }
+    
+   .fov:hover{
+height: 320px;
+     box-shadow: 0 4px 8px rgba(19, 18, 18, 0.1);
+    background: linear-gradient(to top,  rgb(234, 189, 155),  rgba(255, 255, 255, 1)); 
+    cursor: pointer;
+    transition: 0.6s;
+   }
+   .cs3{
+    /* border: 1px solid #FC882E; */
+    padding: 10px;
+    width: 220px;
+    height: 250px;
+   }
+  .second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second:hover{
+     padding: 1px;
+    border: 5px solid #FC882E;
+    transition: .4s;
+}
+.btn-2{
+    background: #FC882E;
+    width: 336px;
+    height: 56px;
+    /* left: 552px; */
+    justify-content: center;
+    align-items: center;
+    top: 714px;
+    gap: 8px;
+    padding: 10px, 24px, 10px, 24px;
+    border: 5px solid #FC882E;
+    border-radius: 100px;
+    color: #fff;
+    transition: .4s;
+    cursor: pointer;
+}
+.btn-2:hover{
+border: 5px solid #FC882E;
+}
+.button2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button2 a{
+text-decoration: none;
+color: #fff;
+}
+.eight{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: none;
+}
+.ten{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+/* ************************* whatsapp icon *********************************** */
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  font-size: 24px;
+  width: 100px;
+  height: 60px;
+  /* background-color: green; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 50px;
+  font-weight: 800;
+  box-shadow: darkgreen;
+}
+#whatsapp-icon i {
+  color: green;
+}
+.con-support{
+  width: 300px; 
+  font-size: 20px; 
+  height: 54px; 
+  color: #fff;
+  border: #FC882E;
+  font-weight: 600;
+   background: #FC882E;
+    gap: 10px;
+     border-radius: 16px;
+     padding: 10px;
+}
+.join-us img{
+margin-left: 55px;
+  }
+  .join-us h2{
+    font-weight: 700;
+    font-size: 44px;
+ 
+  }
+  .john2{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    
+      .cstf{
+        display: none;
+      }
+      .logo{
+          width: 30px;
+          height: auto;
+          margin-left: 10px;
+        }
+        .contact{
+          margin-left: 2px;
+        }
+        .search-container {
+          position: relative;
+          width: 200px;
+          margin-left: 0;
+        }
+        
+        .search-icon {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          font-size: 16px;
+          color: #ccc;
+        }
+        
+        .search-input {
+          width: 75%;
+          padding-left: 30px; /* Space for the icon */
+          padding-right: 10px; /* Space for the clear button (if needed) */
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          height: 36px;
+          font-size: 14px;
+        }
+        .masthead {
+          background-size: cover;
+          min-height: 90vh;
+          display: none;
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+          position: relative;
+        }
+        .one {
+          background-size: cover;
+          min-height: 100vh;
+     
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+          position: relative;
+        }
+       
+        .two {
+  padding-top: 100px;
+  text-align: center;
+  /* margin-left: 50px; */
+        }
+        .three{
+          text-align: center;
+        }
+      
+      .bttn {
+        display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          padding-right: 100px;
+          gap: 20px;
+          /* height: 100vh; */
+        }
+        .four{
+          text-align: center;
+          /* font-size: 44px; */
+          font-family: 'merienda';
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        .four h3{
+          font-size: 30px;
+          font-weight: 300;
+          margin-top: 10px;
+          font-family: 'merienda';
+        }
+        .four h4{
+          font-size: 18px;
+          padding: 5px;
+          /* font-weight: 500; */
+          font-family: 'mulish';
+        }
+  
+        .five {
+          grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+     padding: 10px;
+  
+        }
+        .five3 {
+          grid-template-columns: repeat(1, 1fr); 
+          padding: 50px;
+          width: 300px;
+     
+        }
+        
+     
+        .six.sixp{
+          font-size: 16px;
+        }
+        .first{
+          width: 100%;
+          margin-top: 20px;
+        }
+        .first p {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+        .cs1{
+          margin-bottom: 60px;
+        }
+        
+  
+        .first1{
+          margin-top: 50px;
+    /*  margin-left: 210px; */
+        /* padding-right: 5px; */
+        }
+  .first1 img{
+    width: 300px;
+  }
+        .first1 p{
+          margin-top: 10px;
+          font-size: 16px;
+        }
+  
+        .product-image{
+          aspect-ratio: 1/1;
+           width:300px; 
+          object-fit: cover;
+        }
+        .mst{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          /* gap: 2px; */
+         align-items: center;
+         justify-content: space-between;
+        }
+       
+     
+      .section{
+          padding: 3rem 0 2rem;
+      }
+      .shop{
+          margin-top: 20rem;
+      }
+      .product-box:hover{
+          padding: 1px;
+          border: 1px solid darkblue;
+          transition: .4s;
+      }
+      .second{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      #whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        left: 250px;
+        font-size: 24px;
+        width: 100px;
+        height: 60px;
+        /* background-color: green; */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1000;
+        font-size: 50px;
+        font-weight: 800;
+        box-shadow: darkgreen;
+      }
+  
+      .john img{
+        display: none;
+      }
+      .why-us{
+        display: none;
+      }
+      .started{
+        width: 150px;
+        text-decoration: none;
+        background: #FC882E;
+        color: #fff;
+        border: 1px solid #FC882E;
+        border-radius: 20px;
+        padding: 10px;
+  font-size: 18px;
+        /* align-items: center; */
+   }
+   .whatsapp-btn{
+    width: 150px;
+    text-decoration: none;
+    background: #03390a;
+    color: #fff;
+    border: 1px solid #FC882E;
+    border-radius: 20px;
+    padding: 10px;
+  font-size: 18px;
+    align-items: center;
+  }
+  
+  .whatsapp-btn2{
+    width: 150px;
+    text-decoration: none;
+    background: #FC882E;
+    color: #fff;
+    border: 1px solid #FC882E;
+    border-radius: 20px;
+    padding: 10px; 
+  font-size: 18px;
+    align-items: center;
+  }
+  
+  
+  
+      .con-support{
+        width: 250px; 
+        font-size: 20px; 
+        height: 54px; 
+        color: #fff;
+        border: #FC882E;
+        font-weight: 600;
+         background: #FC882E;
+         margin-left: 10px;
+          /* gap: 10px; */
+           border-radius: 16px;
+           padding: 10px;
+           align-items: center;
+      }
+      .john{
+        display: none;
+      }
+  
+    
+      .cs2 {
+        /* border: 1px solid #FC882E; */
+        font-size: 12px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      
+      }
+    .cs2:hover {
+      padding: 10px;
+      width: 350px;
+      height: 450px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* background: linear-gradient(to top, rgb(234, 189, 155), rgba(255, 255, 255, 1));, */
+        /* background: linear-gradient(to bottom, rgba(252, 136, 46, 0.5) 0%, rgba(232, 228, 228, 0.5) 100%); */
+    }
+    
+     .cs2 p{
+      word-wrap: break-word;
+     }
+    
+     .cs3{
+      /* border: 1px solid #FC882E; */
+      font-size: 18px;
+    
+        padding: 10px;
+      width: 170px;
+      height: 250px;
+     }
+     .six p{
+      font-size: 14px;
+     }
+  
+     .fov2{
+      
+           transition: 0.6s;
+         }
+      
+     .fov2:hover{
+    box-shadow: 0 4px 8px rgba(19, 18, 18, 0.1);
+      background: linear-gradient(to top,  rgb(234, 189, 155),  rgba(255, 255, 255, 1)); 
+      cursor: pointer;
+      transition: 0.6s;
+     }
+   
+    
+  }
+
+ 

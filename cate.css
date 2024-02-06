@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #eee;
+    padding: 1rem;
+}
+/* header h1{
+    font-size: 2.5rem;
+    line-height: 2;
+    color: var(--color-primary);
+} */
+.product-details a{
+    padding: 10px;
+
+}
+/* form input{
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+border-radius: 5px;
+border-bottom: 2px solid var(--color-sec);
+margin-bottom: 2rem;
+} */
+.filter-box{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    align-items: center;
+  }
+  
+            .btnv{
+              justify-content: center;
+              align-items: center;
+              width: 150px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid dark;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #b2abab;
+            }
+            .sidebar{
+              border: 1px solid dark !important;
+      width: 300px !important;
+      height: 560px !important;
+      padding: 10px;
+      /* margin-right: 50px; */
+            }
+.active{
+    background-color: var(--color-primary);
+}
+
+.main a {
+   
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid black;
+     padding:  5px 15px;
+     justify-content: center;
+    margin-right: 1rem;
+    border-radius: 16px; 
+    /* margin-left: 10%; */
+    margin-bottom: 100px;
+    border: 1px solid dark;
+padding-bottom: 1px;
+}
+p{
+    color: #000;
+    text-align: center;
+    
+}
+span{
+    color: red;
+    text-decoration: line-through;
+}
+
+@media (max-width:700px) { 
+    form input{
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        font-size: 1.6rem;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--color-sec);
+    margin-bottom: 2rem;
+    }
+    .btn {
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--color-sec);
+        padding: 1px;
+        /* margin-right: 1rem; */
+        border-radius: 3px; 
+    }
+    header h1{
+        font-size: 14px;
+        line-height: 2;
+        color: var(--color-primary);
+    }
+}
